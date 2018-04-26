@@ -8,3 +8,249 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="public/style.css">
 </head>
+
+<body>
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<h1>Pokemone Trainer Questionaire</h1>
+			<hr>
+		</div>
+			<form method="POST" action="/api/pokepartn"><!--Start of Form-->
+				<h3><strong>Your Trainer Bio</strong></h3>
+				<fieldset class="form-group">
+					<label for="name">Name(Required)</label>
+					<input type="text" class="form-control"placeholder="Your Name" id="name" name="name"require>
+				</fieldset>
+				<fieldset class="form-group">
+					<label for="photo">Like a Pic of You (Required)</label>
+					<input type="text" class="form-control"placeholder="http://coolpic.jpg" id="photo" name="photo"require>
+				</fieldset>
+				<hr>
+				<!--Question 1-->
+				<h4><strong>Question 1</strong></h4>
+				<fieldset class="form-group">
+					<label for="question01">I prefer warm dry climates </label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question01"name="scores[0]">
+							<option>1(Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5(Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<!--End of Question 1-->
+				<!--Question 2-->
+				<h4><strong>Question 2</strong></h4>
+				<fieldset class="form-group">
+					<label for="question02">Being near water is home to me </label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question02"name="scores[1]">
+							<option>1(Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5(Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<!--End of Question 2-->
+
+				<!--Question 3-->
+				<h4><strong>Question 2</strong></h4>
+				<fieldset class="form-group">
+					<label for="question02">Being near water is home to me </label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question02"name="scores[1]">
+							<option>1(Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5(Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<!--End of Question 2-->
+
+				<!--Question 3-->
+				<h4><strong>Question 3</strong></h4>
+				<fieldset class="form-group">
+					<label for="question03">I feel clarity when surrounded by beautfiul, green plants and wet dirt. </label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question03"name="scores[2]">
+							<option>1(Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5(Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<!--End of Question 3-->
+
+				<!--Question 4-->
+				<h4><strong>Question 1</strong></h4>
+				<fieldset class="form-group">
+					<label for="question04">Raw attack (not special) is ideal to me</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question04"name="scores[3]">
+							<option>1(Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5(Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<!--End of Question 4-->
+
+				<!--Question 5-->
+				<h4><strong>Question 5</strong></h4>
+				<fieldset class="form-group">
+					<label for="question05">A strong Defense over Attack is important to me</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question05"name="scores[4]">
+							<option>1(Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5(Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<!--End of Question 5-->
+
+				<!--Question 6-->
+				<h4><strong>Question 6</strong></h4>
+				<fieldset class="form-group">
+					<label for="question06">High special attacks are very important to me especially over special defense</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question06"name="scores[5]">
+							<option>1(Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5(Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<!--End of Question 6-->
+
+				<!--Question 7-->
+				<h4><strong>Question 7</strong></h4>
+				<fieldset class="form-group">
+					<label for="question07">Speed can be the deciding factor in a Poke Battle</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question07"name="scores[6]">
+							<option>1(Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5(Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<!--End of Question 7-->
+
+				<!--Question 8-->
+				<h4><strong>Question 8</strong></h4>
+				<fieldset class="form-group">
+					<label for="question08">Fly is damn good fun </label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question08"name="scores[7]">
+							<option>1(Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5(Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<!--End of Question 8-->
+
+				<!--Question 9-->
+				<h4><strong>Question 9</strong></h4>
+				<fieldset class="form-group">
+					<label for="question09">But water cannons better </label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question09"name="scores[8]">
+							<option>1(Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5(Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<!--End of Question 9-->
+
+				<!--Question 10-->
+				<h4><strong>Question 10</strong></h4>
+				<fieldset class="form-group">
+					<label for="question10">But definately not as great as harnassing the power of the sun and using it as a high power beam </label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="question10"name="scores[9]">
+							<option>1(Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5(Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset><br>
+				<!--End of Question 10-->	
+				<input type="submit" class="btn btn-primary" value="Who's that Pokemon?" id="submit">	
+			</form><!--End of Form-->
+	</div>
+		<hr>
+		<a href="/api/pokepartner">API Pokemon List</a> <a href="" target="_blank">GitHub Repo</a>| 
+	<div id="starterPokemonModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">X</button>
+					<h2 id="modal-title">Your New Partner!</h2>
+				</div>
+				<div class="modal-body">
+					<h2 id="starterPokemonName"></h2>
+					<img id="starterPokemonImg" src="#" onError="this.src='#'" width=500px alt="Pokemon">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	<script type="text/javascript">
+	$('#submit').on("click", function(){
+		var userInput ={
+			name:$('#name').val().trim(),
+			photo:$('#photo').val().trim(),
+			scores: [$('#question01').val().trim(), $('#question02').val().trim(), $('#question03').val().trim(), $('#question04').val().trim(), $('#question05').val().trim(), $('#question06').val().trim(), $('#question07').val().trim(), $('#question08').val().trim(), $('#question09').val().trim(), $('#question10').val().trim()]
+		}
+
+		var currentURL = window.location.origin;
+		$.post(currentURL + '/api/pokepartner', userInput, function(data) {
+
+			$("#startePokemonName").text(data.name);
+			$("#starterPokemonImg").attr("src", data.photo);
+			$("#starterPokemonModal").modal("show");
+		});
+
+		return false
+	});
+	</script>
+
+</body>
